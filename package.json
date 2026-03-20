@@ -1,0 +1,35 @@
+{
+  "name": "playwright_windows_stable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:public": "playwright test tests/public.spec.js",
+    "test:public:headed": "playwright test tests/public.spec.js --headed",
+    "test:i18n": "playwright test tests/i18n.spec.js",
+    "test:i18n:headed": "playwright test tests/i18n.spec.js --headed",
+    "test:auth": "playwright test tests/auth.spec.js",
+    "test:auth:headed": "playwright test tests/auth.spec.js --headed",
+    "test:visual": "playwright test tests/visual.spec.js",
+    "test:visual:headed": "playwright test tests/visual.spec.js --headed",
+    "test:copy": "playwright test tests/copy.spec.js",
+    "test:copy:headed": "playwright test tests/copy.spec.js --headed",
+    "test:vr": "playwright test tests/visual-regression.spec.js",
+    "test:vr:update": "playwright test tests/visual-regression.spec.js --update-snapshots",
+    "test:locale-visual": "playwright test tests/locale-visual-matrix.spec.js",
+    "test:locale-visual:headed": "playwright test tests/locale-visual-matrix.spec.js --headed",
+    "test:locale-visual:update": "playwright test tests/locale-visual-matrix.spec.js --update-snapshots"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "dotenv": "^17.3.1"
+  }
+}
