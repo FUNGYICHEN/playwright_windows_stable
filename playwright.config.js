@@ -13,7 +13,7 @@ module.exports = defineConfig({
   workers: 1,
   reporter: [['list'], ['html', { open: 'never' }]],
   use: {
-    baseURL: process.env.BASE_URL || 'https://dev-lt.t9platform.com/',
+    baseURL: process.env.BASE_URL || 'https://your-dev-site.example.com/',
     headless: String(process.env.HEADLESS || 'false').toLowerCase() === 'true',
     channel: process.env.BROWSER_CHANNEL || 'chromium',
     executablePath: process.env.PLAYWRIGHT_EXECUTABLE_PATH ||
